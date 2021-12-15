@@ -26,9 +26,7 @@ namespace _1213_データベースのデータ操作
         //データの抽出
         private void btn_Select_Click_1(object sender, EventArgs e)
         {
-            //テーブル内のすべての行を削除
-            dtSet.Clear();
-
+            //DataSetからデータテーブルを削除
             if (dtSet.Tables.Count == 1)
             {
                 dtSet.Tables.Remove(dtSet.Tables[0]);
